@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据迁移 | Maturest</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/docs/logo.png">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.28d5d7d1.css" as="style"><link rel="preload" href="/docs/assets/js/app.96013f2a.js" as="script"><link rel="preload" href="/docs/assets/js/2.6b092d03.js" as="script"><link rel="preload" href="/docs/assets/js/17.691fbc40.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.ecd0eab1.js"><link rel="prefetch" href="/docs/assets/js/11.d80ffe90.js"><link rel="prefetch" href="/docs/assets/js/12.6d11ae33.js"><link rel="prefetch" href="/docs/assets/js/13.7bc0ff66.js"><link rel="prefetch" href="/docs/assets/js/14.8d21492d.js"><link rel="prefetch" href="/docs/assets/js/15.23a53091.js"><link rel="prefetch" href="/docs/assets/js/16.ad983608.js"><link rel="prefetch" href="/docs/assets/js/18.4ca58a98.js"><link rel="prefetch" href="/docs/assets/js/19.2d67c009.js"><link rel="prefetch" href="/docs/assets/js/20.1e8fce64.js"><link rel="prefetch" href="/docs/assets/js/21.3e093ed2.js"><link rel="prefetch" href="/docs/assets/js/22.99ef936d.js"><link rel="prefetch" href="/docs/assets/js/23.579c9755.js"><link rel="prefetch" href="/docs/assets/js/24.9c51e6c8.js"><link rel="prefetch" href="/docs/assets/js/25.c2e6a4eb.js"><link rel="prefetch" href="/docs/assets/js/26.a3300cc6.js"><link rel="prefetch" href="/docs/assets/js/27.1be9a9b3.js"><link rel="prefetch" href="/docs/assets/js/28.735ddce7.js"><link rel="prefetch" href="/docs/assets/js/29.bfae6bd1.js"><link rel="prefetch" href="/docs/assets/js/3.3dbc5adf.js"><link rel="prefetch" href="/docs/assets/js/30.9d86eddc.js"><link rel="prefetch" href="/docs/assets/js/31.29ae0699.js"><link rel="prefetch" href="/docs/assets/js/32.90631d5f.js"><link rel="prefetch" href="/docs/assets/js/4.4669c6e2.js"><link rel="prefetch" href="/docs/assets/js/5.91c18d5d.js"><link rel="prefetch" href="/docs/assets/js/6.4e53a11e.js"><link rel="prefetch" href="/docs/assets/js/7.eb129e78.js"><link rel="prefetch" href="/docs/assets/js/8.4f363b8a.js"><link rel="prefetch" href="/docs/assets/js/9.026e85bb.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.28d5d7d1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Maturest</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/front/css3/" class="nav-link">
+  css3
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Back end" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Back end" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/php/" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/composer/" class="nav-link">
+  composer
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/laravel/" class="nav-link router-link-active">
+  laravel
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/django/" class="nav-link">
+  django
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/docker/" class="nav-link">
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/redis/" class="nav-link">
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mongodb/" class="nav-link">
+  mongodb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programs" class="dropdown-title"><span class="title">项目经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="Programs" class="mobile-dropdown-title"><span class="title">项目经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/programs/h5/" class="nav-link">
+  H5项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/mini-program/" class="nav-link">
+  小程序项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/web/" class="nav-link">
+  PC端项目
+</a></li></ul></div></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/front/css3/" class="nav-link">
+  css3
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Back end" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Back end" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/php/" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/composer/" class="nav-link">
+  composer
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/laravel/" class="nav-link router-link-active">
+  laravel
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/django/" class="nav-link">
+  django
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/docker/" class="nav-link">
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/redis/" class="nav-link">
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mongodb/" class="nav-link">
+  mongodb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programs" class="dropdown-title"><span class="title">项目经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="Programs" class="mobile-dropdown-title"><span class="title">项目经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/programs/h5/" class="nav-link">
+  H5项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/mini-program/" class="nav-link">
+  小程序项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/web/" class="nav-link">
+  PC端项目
+</a></li></ul></div></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/docs/back/laravel/" aria-current="page" class="sidebar-link">Laravel</a></li><li><a href="/docs/back/laravel/homestead.html" class="sidebar-link">Homestead 的使用</a></li><li><a href="/docs/back/laravel/vscode.html" class="sidebar-link">vscode 编辑器的使用小技巧</a></li><li><a href="/docs/back/laravel/artisan.html" class="sidebar-link">常用的 Artisan 命令</a></li><li><a href="/docs/back/laravel/best_practice.html" class="sidebar-link">最佳实践</a></li><li><a href="/docs/back/laravel/standard.html" class="sidebar-link">开发规范</a></li><li><a href="/docs/back/laravel/migration.html" aria-current="page" class="active sidebar-link">数据迁移</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/back/laravel/migration.html#生成迁移" class="sidebar-link">生成迁移</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/back/laravel/migration.html#整合迁移" class="sidebar-link">整合迁移</a></li><li class="sidebar-sub-header"><a href="/docs/back/laravel/migration.html#设置数据连接和表选项" class="sidebar-link">设置数据连接和表选项</a></li><li class="sidebar-sub-header"><a href="/docs/back/laravel/migration.html#执行迁移" class="sidebar-link">执行迁移</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数据迁移"><a href="#数据迁移" class="header-anchor">#</a> 数据迁移</h1> <p>数据迁移有以下好处：多人并行开发、代码版本管理、数据库版本控制、兼容多种数据库、部署方便。</p> <h2 id="生成迁移"><a href="#生成迁移" class="header-anchor">#</a> 生成迁移</h2> <div class="language-php extra-class"><pre class="language-php"><code>php artisan make<span class="token punctuation">:</span>migration create_users_table <span class="token operator">--</span>path<span class="token operator">=</span>database<span class="token operator">/</span>migrations<span class="token operator">/</span>users
+</code></pre></div><h3 id="整合迁移"><a href="#整合迁移" class="header-anchor">#</a> 整合迁移</h3> <div class="language-php extra-class"><pre class="language-php"><code>php artisan schema<span class="token punctuation">:</span>dump
+
+<span class="token comment"># 转储当前数据库架构并删除所有现有迁移</span>
+php artisan schema<span class="token punctuation">:</span>dump <span class="token operator">--</span>prune
+</code></pre></div><h3 id="设置数据连接和表选项"><a href="#设置数据连接和表选项" class="header-anchor">#</a> 设置数据连接和表选项</h3> <p>下面只是罗列平常用到的，如弱深究，可以查看源码</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// 添加连接属性</span>
+<span class="token keyword">protected</span> <span class="token variable">$connection</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'other_connection'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 除了上面设置的属性，还可以使用以下方式</span>
+<span class="token class-name static-context">Schema</span><span class="token operator">::</span><span class="token function">connection</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'sqlite'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'users'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token class-name type-declaration">Blueprint</span> <span class="token variable">$table</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// engine 属性指定表的存储引擎</span>
+    <span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token property">engine</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'InnoDB'</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 指定字符集</span>
+    <span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token property">charset</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'utf8mb4'</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 指定排序规则 </span>
+    <span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token property">collation</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'utf8mb4_unicode_ci'</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 添加标注释</span>
+    <span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token function">comment</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Business calculations'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 外检约束</span>
+    <span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token function">foreign</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'user_id'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">references</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'id'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'users'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">onDelete</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'cascade'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token operator">.</span>
+    <span class="token operator">.</span>
+    <span class="token operator">.</span>
+
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// Laravel 默认会自动将数据表名称、索引的字段名及索引类型简单地连接在一起作为名称。</span>
+
+<span class="token comment">// 删除 'geo_state_index' 索引</span>
+<span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token function">dropIndex</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'geo_state_index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token function">dropIndex</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'state'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+<span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token function">dropForeign</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'posts_user_id_foreign'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$table</span><span class="token operator">-&gt;</span><span class="token function">dropForeign</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'user_id'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="执行迁移"><a href="#执行迁移" class="header-anchor">#</a> 执行迁移</h3> <div class="language-php extra-class"><pre class="language-php"><code>
+php artisan migrate
+
+php artisan migrate<span class="token punctuation">:</span>status
+
+php artisan migrate<span class="token punctuation">:</span>rollback
+
+php artisan migrate<span class="token punctuation">:</span>rollback <span class="token operator">--</span>step<span class="token operator">=</span><span class="token number">5</span>
+
+php artisan migrate<span class="token punctuation">:</span>reset
+
+php artisan migrate<span class="token punctuation">:</span>refresh
+
+php artisan migrate<span class="token punctuation">:</span>refresh <span class="token operator">--</span>seed
+
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/maturest/docs/edit/master/back/laravel/migration.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">8/10/2023, 5:20:59 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/back/laravel/standard.html" class="prev">
+        开发规范
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.96013f2a.js" defer></script><script src="/docs/assets/js/2.6b092d03.js" defer></script><script src="/docs/assets/js/17.691fbc40.js" defer></script>
+  </body>
+</html>
