@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>引用传递 | Maturest</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/docs/logo.png">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.28d5d7d1.css" as="style"><link rel="preload" href="/docs/assets/js/app.22f7b00b.js" as="script"><link rel="preload" href="/docs/assets/js/2.6b092d03.js" as="script"><link rel="preload" href="/docs/assets/js/27.4b0f85e3.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.7098502c.js"><link rel="prefetch" href="/docs/assets/js/11.bc0bdff6.js"><link rel="prefetch" href="/docs/assets/js/12.ac2b2156.js"><link rel="prefetch" href="/docs/assets/js/13.0ee3d1b8.js"><link rel="prefetch" href="/docs/assets/js/14.a2787250.js"><link rel="prefetch" href="/docs/assets/js/15.7a334d5c.js"><link rel="prefetch" href="/docs/assets/js/16.884e0056.js"><link rel="prefetch" href="/docs/assets/js/17.08150881.js"><link rel="prefetch" href="/docs/assets/js/18.c56e648b.js"><link rel="prefetch" href="/docs/assets/js/19.b5c74325.js"><link rel="prefetch" href="/docs/assets/js/20.2d25600c.js"><link rel="prefetch" href="/docs/assets/js/21.d0e60327.js"><link rel="prefetch" href="/docs/assets/js/22.75dee519.js"><link rel="prefetch" href="/docs/assets/js/23.6dab8b50.js"><link rel="prefetch" href="/docs/assets/js/24.6d0ab12c.js"><link rel="prefetch" href="/docs/assets/js/25.2e8ce155.js"><link rel="prefetch" href="/docs/assets/js/26.3e1bfb22.js"><link rel="prefetch" href="/docs/assets/js/28.b7fac6c0.js"><link rel="prefetch" href="/docs/assets/js/29.5b1dd245.js"><link rel="prefetch" href="/docs/assets/js/3.73e91031.js"><link rel="prefetch" href="/docs/assets/js/30.0d819531.js"><link rel="prefetch" href="/docs/assets/js/31.8004487f.js"><link rel="prefetch" href="/docs/assets/js/32.b1ce6e96.js"><link rel="prefetch" href="/docs/assets/js/33.b0266245.js"><link rel="prefetch" href="/docs/assets/js/34.fa07fb72.js"><link rel="prefetch" href="/docs/assets/js/35.930d7dc2.js"><link rel="prefetch" href="/docs/assets/js/36.b5f53dfa.js"><link rel="prefetch" href="/docs/assets/js/37.c4ac477f.js"><link rel="prefetch" href="/docs/assets/js/38.9da546b6.js"><link rel="prefetch" href="/docs/assets/js/4.4669c6e2.js"><link rel="prefetch" href="/docs/assets/js/5.91c18d5d.js"><link rel="prefetch" href="/docs/assets/js/6.4e53a11e.js"><link rel="prefetch" href="/docs/assets/js/7.0c917989.js"><link rel="prefetch" href="/docs/assets/js/8.3c7a5130.js"><link rel="prefetch" href="/docs/assets/js/9.75e66c19.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.28d5d7d1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Maturest</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/front/css3/" class="nav-link">
+  css3
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Back end" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Back end" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/php/" class="nav-link router-link-active">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/composer/" class="nav-link">
+  composer
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/laravel/" class="nav-link">
+  laravel
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/django/" class="nav-link">
+  django
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/docker/" class="nav-link">
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/redis/" class="nav-link">
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mongodb/" class="nav-link">
+  mongodb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programs" class="dropdown-title"><span class="title">项目经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="Programs" class="mobile-dropdown-title"><span class="title">项目经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/programs/h5/" class="nav-link">
+  H5项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/mini-program/" class="nav-link">
+  小程序项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/web/" class="nav-link">
+  PC端项目
+</a></li></ul></div></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/front/css3/" class="nav-link">
+  css3
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/es6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Back end" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Back end" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/php/" class="nav-link router-link-active">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/composer/" class="nav-link">
+  composer
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/laravel/" class="nav-link">
+  laravel
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/django/" class="nav-link">
+  django
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/docker/" class="nav-link">
+  docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/redis/" class="nav-link">
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mongodb/" class="nav-link">
+  mongodb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programs" class="dropdown-title"><span class="title">项目经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="Programs" class="mobile-dropdown-title"><span class="title">项目经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/programs/h5/" class="nav-link">
+  H5项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/mini-program/" class="nav-link">
+  小程序项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/web/" class="nav-link">
+  PC端项目
+</a></li></ul></div></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/docs/back/php/" aria-current="page" class="sidebar-link">PHP</a></li><li><a href="/docs/back/php/interview.html" aria-current="page" class="active sidebar-link">引用传递</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h5 id="引用传递"><a href="#引用传递" class="header-anchor">#</a> 引用传递</h5> <blockquote><p>在 PHP 中，COW（Copy-On-Write）机制是一种优化技术，用于延迟或完全避免数据的复制，直到数据需要修改为止。COW 机制的优点在于它可以减少不必要的内存分配和数据复制，从而提高代码的性能。</p></blockquote> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+    <span class="token comment">// 初始 4962896</span>
+    <span class="token function">dump</span><span class="token punctuation">(</span><span class="token function">memory_get_usage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 声明变量 a</span>
+    <span class="token variable">$a</span> <span class="token operator">=</span> <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 声明变量之后 5044328 - 4962896 = 81432</span>
+    <span class="token function">dump</span><span class="token punctuation">(</span><span class="token function">memory_get_usage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token variable">$b</span> <span class="token operator">=</span> <span class="token variable">$a</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 变量 a 赋值给变量 b 之后 5045936 - 5044328 = 1608</span>
+    <span class="token function">dump</span><span class="token punctuation">(</span><span class="token function">memory_get_usage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token variable">$a</span> <span class="token operator">=</span> <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 变量 a 重写，触发 cow 机制 5084464 - 5045936 = 38528</span>
+    <span class="token function">dump</span><span class="token punctuation">(</span><span class="token function">memory_get_usage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</span></code></pre></div><p>变量赋值到变量 a 重写的过程，内存使用过程如下：</p> <p><img src="https://pic.imgdb.cn/item/652fa43ac458853aef0da711.jpg" alt=""></p> <blockquote><p>PHP 是一种广泛使用的服务器端脚本语言，用于开发动态网页和 Web 应用程序。Zend 引擎是 PHP 的核心引擎，负责解析和执行 PHP 代码。它包含了大量的内置函数和类，提供了内存管理、垃圾回收、变量处理等功能，是 PHP 语言运行的关键部分。Zval 数据结构是 Zend 引擎中用于表示变量的内部数据结构。它是一个复合类型，包含了变量的类型、值和引用计数等信息。</p></blockquote> <p>下面我们看一下上面的流程，变量 a 的 zval 数据结构。</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+    <span class="token variable">$a</span> <span class="token operator">=</span> <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">xdebug_debug_zval</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token variable">$b</span> <span class="token operator">=</span> <span class="token variable">$a</span><span class="token punctuation">;</span>
+
+    <span class="token function">xdebug_debug_zval</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token variable">$a</span> <span class="token operator">=</span> <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">xdebug_debug_zval</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</span></code></pre></div><p>下图展示了从声明变量 a ,再赋值给变量 b ,变量 a 再重写的过程中，变量 a 的数据结构情况。</p> <p><img src="https://pic.imgdb.cn/item/652fa820c458853aef166743.png" alt=""></p> <p>我们再试引用赋值的情况，与直接赋值进行对比：</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+    <span class="token variable">$a</span> <span class="token operator">=</span> <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">xdebug_debug_zval</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token variable">$b</span> <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token variable">$a</span><span class="token punctuation">;</span>
+
+    <span class="token function">xdebug_debug_zval</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token variable">$a</span> <span class="token operator">=</span> <span class="token function">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">xdebug_debug_zval</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</span></code></pre></div><p><img src="https://pic.imgdb.cn/item/652faaa9c458853aef1c6858.png" alt=""></p> <h5 id="取消引用"><a href="#取消引用" class="header-anchor">#</a> 取消引用</h5> <blockquote><p>当 unset 一个引用，只是断开了变量名和变量内容之间的绑定。这并不意味着变量内容被销毁了。</p></blockquote> <p>思考题：问如下的每一步的结果是什么或最终结果是什么？</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+    <span class="token variable">$arr</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'a'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'b'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'c'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$arr</span> <span class="token keyword">as</span> <span class="token variable">$key</span> <span class="token operator">=&gt;</span> <span class="token variable">$val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$val</span> <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token variable">$arr</span><span class="token punctuation">[</span><span class="token variable">$key</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+</span></code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/maturest/docs/edit/master/back/php/interview.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">10/18/2023, 6:32:08 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/back/php/" class="prev router-link-active">
+        PHP
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.22f7b00b.js" defer></script><script src="/docs/assets/js/2.6b092d03.js" defer></script><script src="/docs/assets/js/27.4b0f85e3.js" defer></script>
+  </body>
+</html>
