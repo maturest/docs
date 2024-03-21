@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>列表元组的操作 | Maturest</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/docs/logo.png">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.f9e469af.css" as="style"><link rel="preload" href="/docs/assets/js/app.a6bdd905.js" as="script"><link rel="preload" href="/docs/assets/js/2.6b092d03.js" as="script"><link rel="preload" href="/docs/assets/js/38.bc0e32a6.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.a067b955.js"><link rel="prefetch" href="/docs/assets/js/11.d60eeb96.js"><link rel="prefetch" href="/docs/assets/js/12.35e894cc.js"><link rel="prefetch" href="/docs/assets/js/13.ca05cd8e.js"><link rel="prefetch" href="/docs/assets/js/14.fb6b5570.js"><link rel="prefetch" href="/docs/assets/js/15.5bedb072.js"><link rel="prefetch" href="/docs/assets/js/16.b1a70be3.js"><link rel="prefetch" href="/docs/assets/js/17.472ffd8b.js"><link rel="prefetch" href="/docs/assets/js/18.b0ee8b8c.js"><link rel="prefetch" href="/docs/assets/js/19.805cfc79.js"><link rel="prefetch" href="/docs/assets/js/20.d227b83f.js"><link rel="prefetch" href="/docs/assets/js/21.b7298de4.js"><link rel="prefetch" href="/docs/assets/js/22.406abf66.js"><link rel="prefetch" href="/docs/assets/js/23.6b526b47.js"><link rel="prefetch" href="/docs/assets/js/24.19e58dc4.js"><link rel="prefetch" href="/docs/assets/js/25.adc7cbbb.js"><link rel="prefetch" href="/docs/assets/js/26.ed7d55cd.js"><link rel="prefetch" href="/docs/assets/js/27.4c6f5032.js"><link rel="prefetch" href="/docs/assets/js/28.448d75ac.js"><link rel="prefetch" href="/docs/assets/js/29.cde2b6aa.js"><link rel="prefetch" href="/docs/assets/js/3.5eac834c.js"><link rel="prefetch" href="/docs/assets/js/30.0d8cc053.js"><link rel="prefetch" href="/docs/assets/js/31.397f74fb.js"><link rel="prefetch" href="/docs/assets/js/32.627c315b.js"><link rel="prefetch" href="/docs/assets/js/33.139d31fa.js"><link rel="prefetch" href="/docs/assets/js/34.5c3568a0.js"><link rel="prefetch" href="/docs/assets/js/35.18a73e20.js"><link rel="prefetch" href="/docs/assets/js/36.9265d5d7.js"><link rel="prefetch" href="/docs/assets/js/37.f014b4cb.js"><link rel="prefetch" href="/docs/assets/js/39.7ec5b76b.js"><link rel="prefetch" href="/docs/assets/js/4.fca4814b.js"><link rel="prefetch" href="/docs/assets/js/40.4a65f6b8.js"><link rel="prefetch" href="/docs/assets/js/41.5d03bc00.js"><link rel="prefetch" href="/docs/assets/js/42.19944a3f.js"><link rel="prefetch" href="/docs/assets/js/43.67caa34e.js"><link rel="prefetch" href="/docs/assets/js/44.f2381d5b.js"><link rel="prefetch" href="/docs/assets/js/45.b42ea3fc.js"><link rel="prefetch" href="/docs/assets/js/46.64ba8141.js"><link rel="prefetch" href="/docs/assets/js/47.24ca58ea.js"><link rel="prefetch" href="/docs/assets/js/48.510581ad.js"><link rel="prefetch" href="/docs/assets/js/49.425476e3.js"><link rel="prefetch" href="/docs/assets/js/5.925cb319.js"><link rel="prefetch" href="/docs/assets/js/50.f22ff764.js"><link rel="prefetch" href="/docs/assets/js/51.c47a1079.js"><link rel="prefetch" href="/docs/assets/js/52.e96300d3.js"><link rel="prefetch" href="/docs/assets/js/53.c4dccdf4.js"><link rel="prefetch" href="/docs/assets/js/54.cb556118.js"><link rel="prefetch" href="/docs/assets/js/55.25852a65.js"><link rel="prefetch" href="/docs/assets/js/56.b9833bcb.js"><link rel="prefetch" href="/docs/assets/js/57.e21a475c.js"><link rel="prefetch" href="/docs/assets/js/6.4e53a11e.js"><link rel="prefetch" href="/docs/assets/js/7.7bb86dbd.js"><link rel="prefetch" href="/docs/assets/js/8.3797c946.js"><link rel="prefetch" href="/docs/assets/js/9.cfa3cc95.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.f9e469af.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Maturest</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><a href="/docs/back/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/docs/back/composer/" class="nav-link">
+  Composer
+</a></div><div class="nav-item"><a href="/docs/back/laravel/" class="nav-link">
+  Laravel
+</a></div><div class="nav-item"><a href="/docs/back/python/" class="nav-link router-link-active">
+  Python
+</a></div><div class="nav-item"><a href="/docs/back/ai/" class="nav-link">
+  AIGC
+</a></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><a href="/docs/back/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/docs/back/composer/" class="nav-link">
+  Composer
+</a></div><div class="nav-item"><a href="/docs/back/laravel/" class="nav-link">
+  Laravel
+</a></div><div class="nav-item"><a href="/docs/back/python/" class="nav-link router-link-active">
+  Python
+</a></div><div class="nav-item"><a href="/docs/back/ai/" class="nav-link">
+  AIGC
+</a></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/docs/back/python/" aria-current="page" class="sidebar-link">Python 环境准备</a></li><li><a href="/docs/back/python/editor.html" class="sidebar-link">编辑器配置</a></li><li><a href="/docs/back/python/scriptstructure.html" class="sidebar-link">python 的脚本结构</a></li><li><a href="/docs/back/python/data.html" class="sidebar-link">python 中的数据类型</a></li><li><a href="/docs/back/python/list.html" aria-current="page" class="active sidebar-link">列表元组的操作</a></li><li><a href="/docs/back/python/list2.html" class="sidebar-link">列表的索引与切片</a></li><li><a href="/docs/back/python/string1.html" class="sidebar-link">字符串的索引获取</a></li><li><a href="/docs/back/python/dict.html" class="sidebar-link">字典的常用方法</a></li><li><a href="/docs/back/python/set.html" class="sidebar-link">集合的定义</a></li><li><a href="/docs/back/python/transform.html" class="sidebar-link">字符串与数字之间的转换</a></li><li><a href="/docs/back/python/spider.html" class="sidebar-link">网络爬虫之网络基础</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="列表元组的操作"><a href="#列表元组的操作" class="header-anchor">#</a> 列表元组的操作</h1> <ul><li>len 在列表元组中的使用</li></ul> <div class="language- extra-class"><pre class="language-text"><code>names = ['张三','李四']
+length = len(names)
+</code></pre></div><ul><li>列表之间的累加与乘法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>names = ['张三','李四']
+new_names = names + names
+print(new_names)
+
+new_names = names * 2
+print(new_names)
+</code></pre></div><ul><li>in 与 not in 在列表或元组中的使用</li></ul> <div class="language- extra-class"><pre class="language-text"><code>names = ['张三','李四']
+name = '张三'
+print(name in names)
+print(name not in names)
+</code></pre></div><ul><li>append 在尾部添加元素</li></ul> <div class="language- extra-class"><pre class="language-text"><code>list.append(new_item)
+</code></pre></div><ul><li>insert 将元素添加到指定位置</li></ul> <div class="language- extra-class"><pre class="language-text"><code>fruits = ['apple','banana']
+fruits.inster(1,'orange')
+</code></pre></div><ul><li>count 想要查询个数的元素</li></ul> <div class="language- extra-class"><pre class="language-text"><code>list.count(item)
+</code></pre></div><ul><li>remove 删除列表中的某个元素,有多个元素的话，删除第一个</li></ul> <div class="language- extra-class"><pre class="language-text"><code>list.remove(item)
+</code></pre></div><ul><li>del 把变量完全删除</li></ul> <div class="language- extra-class"><pre class="language-text"><code>drinks = ['雪碧','可乐','芬达']
+del drinks
+</code></pre></div><ul><li>reverse 对当前的列表顺序进行反转</li></ul> <div class="language- extra-class"><pre class="language-text"><code>list.reverse()
+</code></pre></div><ul><li>sort 对当前列表按照制定规则进行排序</li></ul> <div class="language- extra-class"><pre class="language-text"><code>list.sort(cmp,key,reverse)
+</code></pre></div><ul><li>clear 将当前列表进行清空</li></ul> <div class="language- extra-class"><pre class="language-text"><code>list.clear()
+</code></pre></div><ul><li>copy 将当前列表复制一份新的列表</li></ul> <div class="language- extra-class"><pre class="language-text"><code>list.copy()
+</code></pre></div><p>二次赋值的变量与原始变量享有相同的内存空间</p> <p>copy函数创建的新列表与原始类表不是一个内存空间，不同享数据变更。</p> <p>copy 属于浅拷贝，通俗的说，我们有一个列表a,列表里的元素还是列表，当我们拷贝出新列表b后，无论是a还是b的内部的列表的数据发生变化后，相互之间都会受到影响。</p> <p>深拷贝对第一层数据进行了 copy,对深层的数据也进行了 copy,原始变量和新变量完全全不共享数据</p> <ul><li>extend 将其他列表或元组中的元素导入到当前列表中</li></ul> <div class="language- extra-class"><pre class="language-text"><code>list.extend(iterable)
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/maturest/docs/edit/master/back/python/list.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/back/python/data.html" class="prev">
+        python 中的数据类型
+      </a></span> <span class="next"><a href="/docs/back/python/list2.html">
+        列表的索引与切片
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.a6bdd905.js" defer></script><script src="/docs/assets/js/2.6b092d03.js" defer></script><script src="/docs/assets/js/38.bc0e32a6.js" defer></script>
+  </body>
+</html>
