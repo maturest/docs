@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>程序逻辑 | Maturest</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/docs/logo.png">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.e81be601.css" as="style"><link rel="preload" href="/docs/assets/js/app.0e3c7c31.js" as="script"><link rel="preload" href="/docs/assets/js/2.6b092d03.js" as="script"><link rel="preload" href="/docs/assets/js/50.d451f073.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.e40aa075.js"><link rel="prefetch" href="/docs/assets/js/11.727283e8.js"><link rel="prefetch" href="/docs/assets/js/12.c4214910.js"><link rel="prefetch" href="/docs/assets/js/13.26bda921.js"><link rel="prefetch" href="/docs/assets/js/14.94fe64f0.js"><link rel="prefetch" href="/docs/assets/js/15.f77c69d4.js"><link rel="prefetch" href="/docs/assets/js/16.280e25ab.js"><link rel="prefetch" href="/docs/assets/js/17.10e4747a.js"><link rel="prefetch" href="/docs/assets/js/18.f6a9066a.js"><link rel="prefetch" href="/docs/assets/js/19.4755d8b5.js"><link rel="prefetch" href="/docs/assets/js/20.49599cda.js"><link rel="prefetch" href="/docs/assets/js/21.4cf06687.js"><link rel="prefetch" href="/docs/assets/js/22.0ab2c321.js"><link rel="prefetch" href="/docs/assets/js/23.b8db3a01.js"><link rel="prefetch" href="/docs/assets/js/24.52741161.js"><link rel="prefetch" href="/docs/assets/js/25.3afd6380.js"><link rel="prefetch" href="/docs/assets/js/26.821aeade.js"><link rel="prefetch" href="/docs/assets/js/27.4a61f301.js"><link rel="prefetch" href="/docs/assets/js/28.3b732e06.js"><link rel="prefetch" href="/docs/assets/js/29.e91447fc.js"><link rel="prefetch" href="/docs/assets/js/3.e0c7af87.js"><link rel="prefetch" href="/docs/assets/js/30.c81856d3.js"><link rel="prefetch" href="/docs/assets/js/31.be21cb17.js"><link rel="prefetch" href="/docs/assets/js/32.66c91cdc.js"><link rel="prefetch" href="/docs/assets/js/33.d0d0a311.js"><link rel="prefetch" href="/docs/assets/js/34.f1d25a96.js"><link rel="prefetch" href="/docs/assets/js/35.af6ccb55.js"><link rel="prefetch" href="/docs/assets/js/36.3dbee6eb.js"><link rel="prefetch" href="/docs/assets/js/37.6d528eb5.js"><link rel="prefetch" href="/docs/assets/js/38.446600f3.js"><link rel="prefetch" href="/docs/assets/js/39.8f62136e.js"><link rel="prefetch" href="/docs/assets/js/4.48af2b25.js"><link rel="prefetch" href="/docs/assets/js/40.359fd706.js"><link rel="prefetch" href="/docs/assets/js/41.343ca3b1.js"><link rel="prefetch" href="/docs/assets/js/42.42099af0.js"><link rel="prefetch" href="/docs/assets/js/43.8a3983cb.js"><link rel="prefetch" href="/docs/assets/js/44.d78f5ea2.js"><link rel="prefetch" href="/docs/assets/js/45.db6e6f2f.js"><link rel="prefetch" href="/docs/assets/js/46.ebcb7d4e.js"><link rel="prefetch" href="/docs/assets/js/47.3b15347f.js"><link rel="prefetch" href="/docs/assets/js/48.d983fc60.js"><link rel="prefetch" href="/docs/assets/js/49.f6d21a0e.js"><link rel="prefetch" href="/docs/assets/js/5.59774b5e.js"><link rel="prefetch" href="/docs/assets/js/51.f7fb47f0.js"><link rel="prefetch" href="/docs/assets/js/52.7dd7652a.js"><link rel="prefetch" href="/docs/assets/js/53.6a7bb59b.js"><link rel="prefetch" href="/docs/assets/js/54.2f1a47e1.js"><link rel="prefetch" href="/docs/assets/js/55.0327597c.js"><link rel="prefetch" href="/docs/assets/js/56.4f9b80d1.js"><link rel="prefetch" href="/docs/assets/js/57.e11ac5ab.js"><link rel="prefetch" href="/docs/assets/js/58.1f972ccb.js"><link rel="prefetch" href="/docs/assets/js/59.27a2cb54.js"><link rel="prefetch" href="/docs/assets/js/6.4e53a11e.js"><link rel="prefetch" href="/docs/assets/js/60.db22115f.js"><link rel="prefetch" href="/docs/assets/js/61.0c8bb0db.js"><link rel="prefetch" href="/docs/assets/js/62.002ad2b3.js"><link rel="prefetch" href="/docs/assets/js/63.3b4ca471.js"><link rel="prefetch" href="/docs/assets/js/64.0d8f6ba7.js"><link rel="prefetch" href="/docs/assets/js/65.214d5f7b.js"><link rel="prefetch" href="/docs/assets/js/66.b28b81d2.js"><link rel="prefetch" href="/docs/assets/js/67.cfc0899b.js"><link rel="prefetch" href="/docs/assets/js/68.86310744.js"><link rel="prefetch" href="/docs/assets/js/69.a6eb555e.js"><link rel="prefetch" href="/docs/assets/js/7.500b55c5.js"><link rel="prefetch" href="/docs/assets/js/70.274d525e.js"><link rel="prefetch" href="/docs/assets/js/71.25288c4c.js"><link rel="prefetch" href="/docs/assets/js/72.6b56e50f.js"><link rel="prefetch" href="/docs/assets/js/8.57c56ba1.js"><link rel="prefetch" href="/docs/assets/js/9.ceb45162.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.e81be601.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Maturest</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><a href="/docs/back/ai/" class="nav-link">
+  AIGC
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/front/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/es/" class="nav-link">
+  Es
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/uni-app/" class="nav-link">
+  Uni-App
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Back end" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Back end" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/python/" class="nav-link router-link-active">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mysql/" class="nav-link">
+  Mysql
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Cache" class="dropdown-title"><span class="title">缓存</span> <span class="arrow down"></span></button> <button type="button" aria-label="Cache" class="mobile-dropdown-title"><span class="title">缓存</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/memcached/" class="nav-link">
+  Memcached
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mongodb/" class="nav-link">
+  Mongodb
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/elasticsearch/" class="nav-link">
+  Elasticsearch
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Operation" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="Operation" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/operation/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/composer/" class="nav-link">
+  Composer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programs" class="dropdown-title"><span class="title">项目经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="Programs" class="mobile-dropdown-title"><span class="title">项目经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/programs/h5/" class="nav-link">
+  H5项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/mini-program/" class="nav-link">
+  小程序项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/web/" class="nav-link">
+  PC端项目
+</a></li></ul></div></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><a href="/docs/back/ai/" class="nav-link">
+  AIGC
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/front/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/es/" class="nav-link">
+  Es
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/uni-app/" class="nav-link">
+  Uni-App
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Back end" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Back end" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/python/" class="nav-link router-link-active">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mysql/" class="nav-link">
+  Mysql
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Cache" class="dropdown-title"><span class="title">缓存</span> <span class="arrow down"></span></button> <button type="button" aria-label="Cache" class="mobile-dropdown-title"><span class="title">缓存</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/memcached/" class="nav-link">
+  Memcached
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mongodb/" class="nav-link">
+  Mongodb
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/elasticsearch/" class="nav-link">
+  Elasticsearch
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Operation" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="Operation" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/operation/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/composer/" class="nav-link">
+  Composer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programs" class="dropdown-title"><span class="title">项目经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="Programs" class="mobile-dropdown-title"><span class="title">项目经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/programs/h5/" class="nav-link">
+  H5项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/mini-program/" class="nav-link">
+  小程序项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/web/" class="nav-link">
+  PC端项目
+</a></li></ul></div></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/docs/back/python/" aria-current="page" class="sidebar-link">Python 环境准备</a></li><li><a href="/docs/back/python/editor.html" class="sidebar-link">编辑器配置</a></li><li><a href="/docs/back/python/scriptstructure.html" class="sidebar-link">脚本结构</a></li><li><a href="/docs/back/python/branch.html" class="sidebar-link">分支结构</a></li><li><a href="/docs/back/python/loop.html" class="sidebar-link">循环结构</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="程序逻辑"><a href="#程序逻辑" class="header-anchor">#</a> 程序逻辑</h2> <p>我们思考一个问题：如何通过所学的知识去解决实际的问题呢，那么就需要不断地锻炼我们的思维。下面我们通过前面所学的知识去解决一下实际问题。</p> <p>1、寻找水仙花数</p> <blockquote><p>水仙花数（Narcissistic Number）也被称为阿姆斯特朗数（Armstrong Number），是指一个 n 位数，它的每个位上的数字的 n 次幂之和等于它本身。例如，153 是一个 3 位数的水仙花数，因为 1^3 + 5^3 + 3^3 = 153。</p></blockquote> <div class="language-python extra-class"><pre class="language-python"><code>
+<span class="token keyword">def</span> <span class="token function">is_narcissistic</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    str_num <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span>
+    n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>str_num<span class="token punctuation">)</span>
+
+    sum_of_num <span class="token operator">=</span> <span class="token number">0</span>
+
+    <span class="token keyword">for</span> bit <span class="token keyword">in</span> str_num<span class="token punctuation">:</span>
+        sum_of_num <span class="token operator">+=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>bit<span class="token punctuation">)</span> <span class="token operator">**</span> n
+    
+    <span class="token keyword">return</span> num <span class="token operator">==</span> sum_of_num
+
+<span class="token comment"># 列举出 100~1000 的水仙花数</span>
+narcissistic <span class="token operator">=</span> <span class="token punctuation">[</span>x <span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">1001</span><span class="token punctuation">)</span> <span class="token keyword">if</span> is_narcissistic<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>narcissistic<span class="token punctuation">)</span>
+
+
+
+</code></pre></div><p>2、给定一个正整数，输出其反转数，比如12345，输出54321</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">reversal_num</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    reversed_num <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">while</span> num <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        reversed_num <span class="token operator">=</span> reversed_num <span class="token operator">*</span> <span class="token number">10</span> <span class="token operator">+</span> num <span class="token operator">%</span> <span class="token number">10</span>
+        num <span class="token operator">//=</span> <span class="token number">10</span>
+    <span class="token keyword">return</span> reversed_num
+
+num <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'请输入数字：'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>reversal_num<span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><p>3、百钱百鸡问题，公鸡5元一只，母鸡3元一只，小鸡1元三只，用100块钱买一百只鸡，问公鸡、母鸡、小鸡各有多少只？</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> y <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        z <span class="token operator">=</span> <span class="token number">100</span> <span class="token operator">-</span> x <span class="token operator">-</span> y
+        <span class="token keyword">if</span> <span class="token number">5</span> <span class="token operator">*</span> x <span class="token operator">+</span> <span class="token number">3</span> <span class="token operator">*</span> y <span class="token operator">+</span> z <span class="token operator">/</span> <span class="token number">3</span> <span class="token operator">==</span> <span class="token number">100</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'公鸡: </span><span class="token interpolation"><span class="token punctuation">{</span>x<span class="token punctuation">}</span></span><span class="token string">只, 母鸡: </span><span class="token interpolation"><span class="token punctuation">{</span>y<span class="token punctuation">}</span></span><span class="token string">只, 小鸡: </span><span class="token interpolation"><span class="token punctuation">{</span>z<span class="token punctuation">}</span></span><span class="token string">只'</span></span><span class="token punctuation">)</span>
+</code></pre></div><p>4、生成斐波那契数列的前20个数。</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">fibonacci_iterative</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>  
+    <span class="token keyword">if</span> n <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">:</span>  
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  
+    <span class="token keyword">elif</span> n <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>  
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>  
+    <span class="token keyword">elif</span> n <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">:</span>  
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span>  
+    <span class="token keyword">else</span><span class="token punctuation">:</span>  
+        sequence <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span>  
+        <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>  
+            sequence<span class="token punctuation">.</span>append<span class="token punctuation">(</span>sequence<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> sequence<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  
+        <span class="token keyword">return</span> sequence  
+  
+<span class="token keyword">print</span><span class="token punctuation">(</span>fibonacci_iterative<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><p>5、找出10000以内的完美数</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">is_perfect</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>  
+    <span class="token keyword">if</span> n <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">:</span>  
+        <span class="token keyword">return</span> <span class="token boolean">False</span>  
+    divisor_sum <span class="token operator">=</span> <span class="token number">1</span>  <span class="token comment"># 1总是因子，但我们不包括n本身  </span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token builtin">int</span><span class="token punctuation">(</span>n<span class="token operator">**</span><span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># 只检查到sqrt(n)即可，因为因子成对出现  </span>
+        <span class="token keyword">if</span> n <span class="token operator">%</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>  
+            divisor_sum <span class="token operator">+=</span> i  
+            <span class="token keyword">if</span> i <span class="token operator">!=</span> n <span class="token operator">//</span> i<span class="token punctuation">:</span>  <span class="token comment"># 避免重复加入平方根因子  </span>
+                divisor_sum <span class="token operator">+=</span> n <span class="token operator">//</span> i  
+    <span class="token keyword">return</span> divisor_sum <span class="token operator">==</span> n  
+  
+<span class="token comment"># 找出10000以内的所有完美数  </span>
+perfect_numbers <span class="token operator">=</span> <span class="token punctuation">[</span>num <span class="token keyword">for</span> num <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10001</span><span class="token punctuation">)</span> <span class="token keyword">if</span> is_perfect<span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">]</span>  
+<span class="token keyword">print</span><span class="token punctuation">(</span>perfect_numbers<span class="token punctuation">)</span>
+</code></pre></div><p>6、输出100以内的所有的素数</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">is_prime</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>  
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;检查一个数是否为素数&quot;&quot;&quot;</span>  
+    <span class="token keyword">if</span> n <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">:</span>  
+        <span class="token keyword">return</span> <span class="token boolean">False</span>  
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token builtin">int</span><span class="token punctuation">(</span>n<span class="token operator">**</span><span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  
+        <span class="token keyword">if</span> n <span class="token operator">%</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>  
+            <span class="token keyword">return</span> <span class="token boolean">False</span>  
+    <span class="token keyword">return</span> <span class="token boolean">True</span>  
+  
+<span class="token comment"># 输出100以内所有的素数  </span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x <span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">101</span><span class="token punctuation">)</span> <span class="token keyword">if</span> is_prime<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/maturest/docs/edit/master/back/python/program_logic.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">6/18/2024, 6:24:45 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.0e3c7c31.js" defer></script><script src="/docs/assets/js/2.6b092d03.js" defer></script><script src="/docs/assets/js/50.d451f073.js" defer></script>
+  </body>
+</html>
