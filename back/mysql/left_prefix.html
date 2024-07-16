@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>最左前缀原则 | Maturest</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/docs/logo.png">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.cffabbe3.css" as="style"><link rel="preload" href="/docs/assets/js/app.12904a86.js" as="script"><link rel="preload" href="/docs/assets/js/2.6b092d03.js" as="script"><link rel="preload" href="/docs/assets/js/43.0700deda.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.a067b955.js"><link rel="prefetch" href="/docs/assets/js/11.727283e8.js"><link rel="prefetch" href="/docs/assets/js/12.35e894cc.js"><link rel="prefetch" href="/docs/assets/js/13.0cd9c785.js"><link rel="prefetch" href="/docs/assets/js/14.94fe64f0.js"><link rel="prefetch" href="/docs/assets/js/15.f77c69d4.js"><link rel="prefetch" href="/docs/assets/js/16.70de09e0.js"><link rel="prefetch" href="/docs/assets/js/17.e0c91821.js"><link rel="prefetch" href="/docs/assets/js/18.c599fc32.js"><link rel="prefetch" href="/docs/assets/js/19.5e0bf096.js"><link rel="prefetch" href="/docs/assets/js/20.49599cda.js"><link rel="prefetch" href="/docs/assets/js/21.4cf06687.js"><link rel="prefetch" href="/docs/assets/js/22.0ab2c321.js"><link rel="prefetch" href="/docs/assets/js/23.b4370f4a.js"><link rel="prefetch" href="/docs/assets/js/24.adef48df.js"><link rel="prefetch" href="/docs/assets/js/25.9c896fe7.js"><link rel="prefetch" href="/docs/assets/js/26.91a17594.js"><link rel="prefetch" href="/docs/assets/js/27.e4fff42f.js"><link rel="prefetch" href="/docs/assets/js/28.5d09ab73.js"><link rel="prefetch" href="/docs/assets/js/29.77548f89.js"><link rel="prefetch" href="/docs/assets/js/3.54f77903.js"><link rel="prefetch" href="/docs/assets/js/30.cdc48f88.js"><link rel="prefetch" href="/docs/assets/js/31.be21cb17.js"><link rel="prefetch" href="/docs/assets/js/32.34fdb899.js"><link rel="prefetch" href="/docs/assets/js/33.c07c65f9.js"><link rel="prefetch" href="/docs/assets/js/34.06f60228.js"><link rel="prefetch" href="/docs/assets/js/35.3f7f69a9.js"><link rel="prefetch" href="/docs/assets/js/36.94d5426a.js"><link rel="prefetch" href="/docs/assets/js/37.81856326.js"><link rel="prefetch" href="/docs/assets/js/38.a44872d0.js"><link rel="prefetch" href="/docs/assets/js/39.a0903bc2.js"><link rel="prefetch" href="/docs/assets/js/4.48af2b25.js"><link rel="prefetch" href="/docs/assets/js/40.2e15c53d.js"><link rel="prefetch" href="/docs/assets/js/41.55fd61a9.js"><link rel="prefetch" href="/docs/assets/js/42.8ad1ef1e.js"><link rel="prefetch" href="/docs/assets/js/44.eba4df18.js"><link rel="prefetch" href="/docs/assets/js/45.8b902261.js"><link rel="prefetch" href="/docs/assets/js/46.1057230b.js"><link rel="prefetch" href="/docs/assets/js/47.b187b3f6.js"><link rel="prefetch" href="/docs/assets/js/48.907de7ce.js"><link rel="prefetch" href="/docs/assets/js/49.11d57bb7.js"><link rel="prefetch" href="/docs/assets/js/5.925cb319.js"><link rel="prefetch" href="/docs/assets/js/50.73de7850.js"><link rel="prefetch" href="/docs/assets/js/51.e588bc51.js"><link rel="prefetch" href="/docs/assets/js/52.60a5fb45.js"><link rel="prefetch" href="/docs/assets/js/53.3354525f.js"><link rel="prefetch" href="/docs/assets/js/54.150d7def.js"><link rel="prefetch" href="/docs/assets/js/55.042b302a.js"><link rel="prefetch" href="/docs/assets/js/56.d9686395.js"><link rel="prefetch" href="/docs/assets/js/57.b7ddbc6c.js"><link rel="prefetch" href="/docs/assets/js/58.15b099ef.js"><link rel="prefetch" href="/docs/assets/js/59.d0f4b6d6.js"><link rel="prefetch" href="/docs/assets/js/6.4e53a11e.js"><link rel="prefetch" href="/docs/assets/js/60.3e9a174f.js"><link rel="prefetch" href="/docs/assets/js/61.d56b9adb.js"><link rel="prefetch" href="/docs/assets/js/62.0352e0b0.js"><link rel="prefetch" href="/docs/assets/js/63.e8f0a017.js"><link rel="prefetch" href="/docs/assets/js/64.c4d236b9.js"><link rel="prefetch" href="/docs/assets/js/65.375900e5.js"><link rel="prefetch" href="/docs/assets/js/66.c426e387.js"><link rel="prefetch" href="/docs/assets/js/67.f4bd25d5.js"><link rel="prefetch" href="/docs/assets/js/68.ebf2f4e3.js"><link rel="prefetch" href="/docs/assets/js/69.f7b1c953.js"><link rel="prefetch" href="/docs/assets/js/7.07189bd2.js"><link rel="prefetch" href="/docs/assets/js/70.351f9258.js"><link rel="prefetch" href="/docs/assets/js/71.f7694a5e.js"><link rel="prefetch" href="/docs/assets/js/72.44a5cc51.js"><link rel="prefetch" href="/docs/assets/js/73.8a0d67ec.js"><link rel="prefetch" href="/docs/assets/js/74.6fc0a4e2.js"><link rel="prefetch" href="/docs/assets/js/75.b02b2401.js"><link rel="prefetch" href="/docs/assets/js/76.c761859a.js"><link rel="prefetch" href="/docs/assets/js/77.0437736d.js"><link rel="prefetch" href="/docs/assets/js/78.72d9ea2c.js"><link rel="prefetch" href="/docs/assets/js/79.720d7bab.js"><link rel="prefetch" href="/docs/assets/js/8.b8e65c25.js"><link rel="prefetch" href="/docs/assets/js/80.f7707888.js"><link rel="prefetch" href="/docs/assets/js/81.7a75e41b.js"><link rel="prefetch" href="/docs/assets/js/82.a1689299.js"><link rel="prefetch" href="/docs/assets/js/83.56188484.js"><link rel="prefetch" href="/docs/assets/js/84.1e32057c.js"><link rel="prefetch" href="/docs/assets/js/85.361b193e.js"><link rel="prefetch" href="/docs/assets/js/86.3b314daa.js"><link rel="prefetch" href="/docs/assets/js/87.6942d124.js"><link rel="prefetch" href="/docs/assets/js/9.98b06d80.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.cffabbe3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">Maturest</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><a href="/docs/back/ai/" class="nav-link">
+  AIGC
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/front/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/es/" class="nav-link">
+  Es
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/uni-app/" class="nav-link">
+  Uni-App
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Back end" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Back end" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mysql/" class="nav-link router-link-active">
+  Mysql
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Cache" class="dropdown-title"><span class="title">缓存</span> <span class="arrow down"></span></button> <button type="button" aria-label="Cache" class="mobile-dropdown-title"><span class="title">缓存</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/memcached/" class="nav-link">
+  Memcached
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mongodb/" class="nav-link">
+  Mongodb
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/elasticsearch/" class="nav-link">
+  Elasticsearch
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Operation" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="Operation" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/operation/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/composer/" class="nav-link">
+  Composer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programs" class="dropdown-title"><span class="title">项目经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="Programs" class="mobile-dropdown-title"><span class="title">项目经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/programs/h5/" class="nav-link">
+  H5项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/mini-program/" class="nav-link">
+  小程序项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/web/" class="nav-link">
+  PC端项目
+</a></li></ul></div></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/author/" class="nav-link">
+  关于作者
+</a></div><div class="nav-item"><a href="/docs/back/ai/" class="nav-link">
+  AIGC
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/front/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/es/" class="nav-link">
+  Es
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/front/uni-app/" class="nav-link">
+  Uni-App
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Back end" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Back end" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/php/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mysql/" class="nav-link router-link-active">
+  Mysql
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Cache" class="dropdown-title"><span class="title">缓存</span> <span class="arrow down"></span></button> <button type="button" aria-label="Cache" class="mobile-dropdown-title"><span class="title">缓存</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/back/memcached/" class="nav-link">
+  Memcached
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/mongodb/" class="nav-link">
+  Mongodb
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/elasticsearch/" class="nav-link">
+  Elasticsearch
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Operation" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="Operation" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/operation/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/docs/back/composer/" class="nav-link">
+  Composer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programs" class="dropdown-title"><span class="title">项目经验</span> <span class="arrow down"></span></button> <button type="button" aria-label="Programs" class="mobile-dropdown-title"><span class="title">项目经验</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/programs/h5/" class="nav-link">
+  H5项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/mini-program/" class="nav-link">
+  小程序项目
+</a></li><li class="dropdown-item"><!----> <a href="/docs/programs/web/" class="nav-link">
+  PC端项目
+</a></li></ul></div></div> <a href="https://github.com/maturest/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/docs/back/mysql/" aria-current="page" class="sidebar-link">基本命令</a></li><li><a href="/docs/back/mysql/DDL.html" class="sidebar-link">DDL</a></li><li><a href="/docs/back/mysql/DML.html" class="sidebar-link">DML</a></li><li><a href="/docs/back/mysql/DQL.html" class="sidebar-link">DQL</a></li><li><a href="/docs/back/mysql/DCL.html" class="sidebar-link">DCL</a></li><li><a href="/docs/back/mysql/view.html" class="sidebar-link">视图函数与过程</a></li><li><a href="/docs/back/mysql/primary.html" class="sidebar-link">索引</a></li><li><a href="/docs/back/mysql/left_prefix.html" aria-current="page" class="active sidebar-link">最左前缀原则</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/back/mysql/left_prefix.html#最左前缀原则" class="sidebar-link">最左前缀原则</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/back/mysql/left_prefix.html#使用案例" class="sidebar-link">使用案例</a></li><li class="sidebar-sub-header"><a href="/docs/back/mysql/left_prefix.html#注意事项" class="sidebar-link">注意事项</a></li></ul></li></ul></li><li><a href="/docs/back/mysql/slow.html" class="sidebar-link">慢查询</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="最左前缀原则"><a href="#最左前缀原则" class="header-anchor">#</a> 最左前缀原则</h2> <blockquote><p>最左前缀原则指的是在使用复合索引（即联合索引）进行查询时，MySQL会按照索引中最左边的列开始匹配查询条件。如果查询条件中包含了索引的最左列，那么MySQL就可以利用这个索引来加速查询过程。但是，如果查询条件跳过了索引的最左列，那么MySQL就无法使用这个索引，从而导致查询效率下降。</p></blockquote> <h3 id="使用案例"><a href="#使用案例" class="header-anchor">#</a> 使用案例</h3> <p>创建复合索引</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE INDEX idx_name_age_gender ON users(name, age, gender);
+</code></pre></div><p>编写查询语句</p> <div class="language- extra-class"><pre class="language-text"><code># 使用了复合索引
+SELECT * FROM users WHERE name = 'John' AND age &lt; 30;
+
+# 跳过了索引的最左列
+SELECT * FROM users WHERE age &lt; 30;
+</code></pre></div><p>当查询条件中包含范围查询（如&gt;、&lt;、BETWEEN、LIKE等）时，最左前缀原则会在遇到第一个范围查询条件时停止匹配后续的索引列。因此，在创建复合索引时，应该尽量将等值查询条件（如=）的列放在前面，将范围查询条件的列放在后面。</p> <p>为了更高效地利用索引，可以根据实际业务需求和数据分布来优化索引的设计。例如，如果某个列在查询条件中频繁出现，且该列的数据分布较为均匀，那么可以将该列放在复合索引的最前面。</p> <p>只要列中包含有 NULL 值都将不会被包含在索引中，复合索引中只要有一列含有 NULL 值，那么这一列对于此复合索引就是无效的。所以在数据库设计时不要让字段的默认值为 NULL。</p> <p>再次举例：</p> <div class="language- extra-class"><pre class="language-text"><code># 假设有一个复合索引 index(a,b,c)
+
+# 能用上a b
+select * from users where a = 1 and b = 2
+
+# 能用上a b（有mysql查询优化器）
+select * from users where a = 1 and b = 2
+
+# 能用上a
+select * from users where a = 2 and c = 3
+
+# 能用上a
+select * from users where a &gt; 2 and c = 3 and b =4
+
+# 不能
+select * from users where b = 2 and c = 3
+
+</code></pre></div><h3 id="注意事项"><a href="#注意事项" class="header-anchor">#</a> 注意事项</h3> <ul><li><p>索引列的顺序：在创建复合索引时，应该根据查询条件中列的使用频率和重要性来安排索引列的顺序。最常用的列或过滤性最强的列应该放在索引的最左边。</p></li> <li><p>查询条件的顺序：编写查询时，尽量保证WHERE子句中的条件顺序与索引列的顺序一致。虽然MySQL查询优化器有时会重新排列条件以匹配索引，但手动优化查询条件顺序可以确保查询性能的可预测性。</p></li> <li><p>避免跳过索引列：尽量避免在查询条件中跳过索引中的列。如果查询条件只包含索引中的非最左列，那么该索引将不会被使用。</p></li> <li><p>索引选择性和基数：索引的选择性（Selectivity）是指索引列中不同值的数量与表中总记录数的比例。高选择性的列更适合放在索引的前面，因为它们能更好地缩小搜索范围。基数（Cardinality）是索引列中不同值的数量，也是衡量索引选择性的一个指标。</p></li> <li><p>前缀索引：如果索引列是字符串类型，并且查询条件中经常只使用列的前缀，那么可以考虑使用前缀索引来减少索引大小和提高查询效率。但是，前缀索引的长度需要仔细选择，以确保既能保持较高的选择性，又能减少索引占用的空间。</p></li> <li><p>索引覆盖：尽量使查询只通过索引就能获取所需的数据，而不需要回表查询。</p></li> <li><p>使用EXPLAIN分析查询：使用MySQL的EXPLAIN命令来分析查询的执行计划，查看是否利用了索引以及索引的使用方式。这有助于发现潜在的索引优化机会。</p></li> <li><p>避免在索引列上使用函数或表达式：在索引列上使用函数或表达式会阻止MySQL使用索引。因此，在编写查询时，应该尽量避免在索引列上进行函数操作或计算。</p></li> <li><p>注意索引的维护：随着数据的增加和变化，索引的性能可能会受到影响。因此，需要定期监控索引的性能并进行必要的维护操作，如重建索引、优化表等。</p></li> <li><p>考虑查询的实际需求：在设计索引时，不仅要考虑查询性能，还要考虑索引对插入、更新和删除操作的影响。过多的索引会减慢这些操作的速度，因为MySQL需要在每个索引上维护数据的一致性。因此，需要根据实际的查询需求和数据变更频率来平衡索引的数量和类型。</p></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/maturest/docs/edit/master/back/mysql/left_prefix.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">7/16/2024, 5:48:41 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/back/mysql/primary.html" class="prev">
+        索引
+      </a></span> <span class="next"><a href="/docs/back/mysql/slow.html">
+        慢查询
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.12904a86.js" defer></script><script src="/docs/assets/js/2.6b092d03.js" defer></script><script src="/docs/assets/js/43.0700deda.js" defer></script>
+  </body>
+</html>
